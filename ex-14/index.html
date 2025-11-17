@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>varios tamanhos de imagens </title>
+</head>
+<body>
+    <h1>teste de imagen dinamica</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="tamanho grande">
+    </picture>
+    <h1>colocar audio</h1>
+  <audio preload="auto" autoplay controls loop>
+    <source src="audio/guanacast-33.mp3" type="audio/mpeg">
+    <source>src="audio/guanacast-33.ogg" type="audio/ogg">
+    <source>src="audio/guanacast-33.wav" type="audio/wav">
+    <p>não é possivel reproduzir esse audio no seu navegador <a href="audio/guanacast-33.mp3">Baixe aqui</a></p>
+  </audio>
+ 
+
+</body>
+</html>
