@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table
+        {
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption
+        {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #c0c0c0;
+        }
+        td,th 
+        {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: #e0e0e0;
+        }
+        td.num
+        {
+            text-align: right;
+        }
+        thead, tfoot
+        {
+            background-color: #7e7e7e;
+        }
+        thead >tr>th{
+            position: sticky;
+            top: -1px;
+            background-color: #7e7e7e ;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>população dos estados federativos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46.289.333</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.292.666</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.366.189</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.930.634</td>
+            </tr>
+                        <tr>
+                <td>São Paulo</td>
+                <td class="num">46.289.333</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.292.666</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.366.189</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.930.634</td>
+            </tr>
+                        <tr>
+                <td>São Paulo</td>
+                <td class="num">46.289.333</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.292.666</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.366.189</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.930.634</td>
+            </tr>
+                        <tr>
+                <td>São Paulo</td>
+                <td class="num">46.289.333</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.292.666</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.366.189</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.930.634</td>
+            </tr>
+                        <tr>
+                <td>São Paulo</td>
+                <td class="num">46.289.333</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.292.666</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.366.189</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.930.634</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>500.930.221</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
