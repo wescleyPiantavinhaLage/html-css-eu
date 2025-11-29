@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/*versão para as demais midias*/
+
+/* w3c recomendações 
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+
+@media print { /* impressão */
+    *{
+        font-family: 'Courier New', Courier, monospace !important;
+    }
+    body{
+         background: url("../imagens/back-print.jpg") !important;
+    }
+    main{
+        border: 2px solid black !important;
+    }
+    main h1{
+        text-shadow: none !important;
+        color: black !important;
+
+    }
+    img#pr{
+        display: block;
+    }
+    img#ph, img#tb, img#pc, img#tv{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) { /* tablets */
+    body{
+        background: url("../imagens/back-tablet.jpg") !important;
+        background-size: cover;
+        background-position: center center;
+    }
+    main{
+       
+        img#tb{
+            display: block;
+        }
+        img#ph, img#pc, img#pr, img#tv{
+            display: none;
+        }
+        
+    }
+
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) { /* laptops/desktops */
+    body{
+        background: url("../imagens/back-pc.jpg") !important;
+        background-size: cover !important;
+        background-position: center center;
+    }
+    main{
+         max-width: 600px !important;
+        img#pc{
+            display: block;
+        }
+        img#ph, img#tb, img#pr, img#tv{
+            display: none;
+        }
+        
+    }
+}
+@media screen and (min-width: 1200px) { /* large laptops/desktops */
+    body{
+        background: url("../imagens/back-tv.jpg") !important;
+        background-size: cover;
+        background-position: center center;
+    }
+    main{
+         max-width: 700px !important;
+        img#tv{
+            display: block;
+        }
+        img#ph, img#tb, img#pc, img#pr{
+            display: none;
+        }
+        
+    }
+}
